@@ -5,6 +5,14 @@
 </head>
 <body>
     UNDER CONSTRUCTION
-    <img src="testImage.png">
+    <img id="test" src="testImage.png">
+    <script>
+        var canvas = new OffscreenCanvas(64, 64);
+        var ctx = canvas.getContext("2d");
+        
+        ctx.drawImage(document.getElementById("test"), 0, 0, 64, 64);
+        
+        console.log(ctx.getImageData(0, 0, 64, 64));
+    </script>
 </body>
 </html>
