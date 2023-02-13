@@ -5,7 +5,10 @@
 </head>
 <body>
     UNDER CONSTRUCTION
+    <canvas id="canvas" width=64 height=64></canvas>
     <script>
+        var c = document.getElementById("canvas");
+        var ct = c.getContext("2d");
         var img = new Image();
         img.src = "testImage.png";
         
@@ -15,7 +18,8 @@
         img.onload = () => {
             ctx.drawImage(img, 0, 0, 64, 64);
         
-            console.log(ctx.getImageData(0, 0, 64, 64));
+            var d = ctx.getImageData(0, 0, 64, 64);
+            ct.putImageData(d, 0, 0);
         }
     </script>
 </body>
