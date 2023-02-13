@@ -5,14 +5,18 @@
 </head>
 <body>
     UNDER CONSTRUCTION
-    <img id="test" src="testImage.png">
     <script>
+        var img = new Image();
+        img.src = "testImage.png";
+        
         var canvas = new OffscreenCanvas(64, 64);
         var ctx = canvas.getContext("2d");
         
-        ctx.drawImage(document.getElementById("test"), 0, 0, 64, 64);
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, 64, 64);
         
-        console.log(ctx.getImageData(0, 0, 64, 64));
+            console.log(ctx.getImageData(0, 0, 64, 64));
+        }
     </script>
 </body>
 </html>
