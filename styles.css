@@ -37,6 +37,12 @@ nav>ul>li:not(.active)>a:hover {
     text-decoration: none;
 }
 
+nav>ul>li:not(.active)>a:visited:hover {
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+}
+
 nav>ul>li>a:visited {
     color: white;
     text-decoration: none;
@@ -88,6 +94,6 @@ a:visited:hover {
 }
 
 .container {
-    margin-top: 14px;
-    height: calc(100% - 14px);
+    margin-top: 20px;
+    height: calc(100% - 20px);
 }
