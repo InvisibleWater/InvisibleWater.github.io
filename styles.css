@@ -1,7 +1,4 @@
-.portfolio-element {
-  
-}
-
-.topbar {
-  
+.nav>li {
+    position: relative;
+    display: block;
 }
