@@ -95,5 +95,6 @@ a:visited:hover {
 
 .container {
     margin-top: 20px;
-    height: calc(100% - 20px);
+    padding:30px;
+    height: 1500px;
 }
