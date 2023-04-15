@@ -1,3 +1,9 @@
+body {
+    background-color: slateblue;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif
+}
+
 nav {
     background-color: #00000f;
     overflow: hidden;
@@ -24,7 +30,7 @@ nav>ul>li a {
     text-decoration: none;
 }
 
-nav>ul>li a:hover:not(.active) {
+a:hover:not(.active) {
     background-color: steelblue;
 }
 
