@@ -23,3 +23,12 @@ nav>ul>li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+nav>ul>li a:hover:not(.active) {
+    background-color: steelblue;
+}
+
+.active {
+    background-color: slateblue;
+    font-weight: bold;
+}
