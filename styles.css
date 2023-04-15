@@ -23,7 +23,7 @@ nav>ul>li {
     float: left;
 }
 
-nav>ul>li a {
+nav>ul>li>a {
     display: block;
     color: white;
     text-align: center;
@@ -31,8 +31,28 @@ nav>ul>li a {
     text-decoration: none;
 }
 
-a:hover:not(.active) {
+nav>ul>li>a:hover:not(.active) {
     background-color: steelblue;
+}
+
+a:link {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:visited {
+    color: salmon;
+    text-decoration: none;
+}
+
+a:link:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:visited:hover {
+    color: salmon;
+    text-decoration: underline;
 }
 
 .active {
